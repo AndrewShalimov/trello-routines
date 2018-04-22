@@ -52,18 +52,18 @@
         <dependency>
             <groupId>org.trello4j</groupId>
             <artifactId>trello4j</artifactId>
-            <version>1.2</version>
+            <version>1.24</version>
         </dependency>
 
     </dependencies>
 
-    <!--<repositories>-->
-    <!--<repository>-->
-    <!--<id>joelso-mvn-repo</id>-->
-    <!--<name>joelso github mvn repo</name>-->
-    <!--<url>https://raw.github.com/joelso/joelso-mvn-repo/master/snapshots/</url>-->
-    <!--</repository>-->
-    <!--</repositories>-->
+    <repositories>
+        <repository>
+            <id>joelso-mvn-repo</id>
+            <name>joelso github mvn repo</name>
+            <url>https://raw.github.com/joelso/joelso-mvn-repo/master/snapshots/</url>
+        </repository>
+    </repositories>
 
     <build>
         <plugins>
