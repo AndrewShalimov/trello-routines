@@ -112,6 +112,24 @@ public class Application {
             System.out.println(e.getMessage());
         }
 
+        // Field type is 'text' - invalid CustomField ID
+        try {
+            Object response = trello.setCustomFieldValue(idCard, "5ad8cf9f5487f51cb4d33d27", "TEST_CF");
+            System.out.println(response.toString());
+        } catch (TrelloException e) {
+            System.out.println(e.getMessage());
+        }
+
+
+        // Field type is 'text' - invalid Card ID
+        try {
+            Object response = trello.setCustomFieldValue("5ad8c7a5c7a22d61b9033b4c", "5ad8cf9f5487f51cb4d42d27", "TEST_CF");
+            System.out.println(response.toString());
+        } catch (TrelloException e) {
+            System.out.println(e.getMessage());
+        }
+
+
         // Field type is 'date'
         try {
             Object response = trello.setCustomFieldValue(idCard, "5aa6af1c82fd37e4ef543bdd", "2017-04-04T09:00:00.000Z");
